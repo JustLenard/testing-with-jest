@@ -1,13 +1,20 @@
-import React from 'react'
-import logo from './logo.svg'
 import './App.css'
 import Application from './components/application/Application'
+import Counter2 from './components/counter2/Counter2'
+import CounterAplication from './components/counterAplication/CounterAplication'
+import User from './components/user/User'
+import AppProviders from './providers/AppProviders'
 
-function App() {
+const App = () => {
 	return (
-		<div className="App">
-			<Application />
-		</div>
+		<AppProviders>
+			<div className="App">
+				<User />
+				<Application />
+				<CounterAplication />
+				<Counter2 count={4} />
+			</div>
+		</AppProviders>
 	)
 }
 

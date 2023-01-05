@@ -1,9 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 interface Props {}
 
 const Application: React.FC<Props> = () => {
 	const [submitted, setSubmitted] = useState(false)
+
+	useEffect(() => {
+		setTimeout(() => {
+			setSubmitted((submitted) => !submitted)
+		}, 800)
+	}, [])
 	return (
 		<div>
 			<h1>Job application form</h1>

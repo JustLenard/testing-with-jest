@@ -46,9 +46,19 @@ describe('Applicatoin', () => {
 		expect(clickMeButtonExists).toBeInTheDocument()
 	})
 
+	// That's to check if stuff is NOT pressent
 	test('submited', () => {
 		render(<Application />)
 		const clickMeButtonExists = screen.queryByText('submitted')
 		expect(clickMeButtonExists).not.toBeInTheDocument()
+	})
+
+	// That's for async stuff
+	test('submited appears at some point', async () => {
+		render(<Application />)
+		const clickMeButtonExists = await screen.findByText('submitted', undefined, {
+			timeout: 2000,
+		})
+		expect(clickMeButtonExists).toBeInTheDocument()
 	})
 })
