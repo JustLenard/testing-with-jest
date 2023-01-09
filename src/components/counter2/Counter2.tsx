@@ -5,6 +5,7 @@ const Counter2: React.FC<Counter2Props> = ({
   handleDecrement,
   handleIncrement,
 }) => {
+  console.log("This is 2==2", 2 === 2)
   return (
     <div>
       <h1>Counter 2</h1>
