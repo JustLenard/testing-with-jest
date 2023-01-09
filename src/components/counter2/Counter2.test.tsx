@@ -59,7 +59,7 @@ describe("Counter2", () => {
     user.click(decrementButton)
 
     // expect(decrementButton).toBeDisabled()
-    expect(decrementButton).toBeEnabled()
+    expect(decrementButton).tobeen()
 
     expect(handleDecrement).toHaveBeenCalledTimes(1)
     expect(handleIncrement).toHaveBeenCalledTimes(1)
