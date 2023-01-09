@@ -30,14 +30,6 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss,js}\"",
     "prepare": "husky install"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:jest-dom/recommended",
-      "eslint-config-prettier"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
