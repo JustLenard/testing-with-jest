@@ -1,9 +1,9 @@
-import './App.css'
-import Application from './components/application/Application'
-import Counter2 from './components/counter2/Counter2'
-import CounterAplication from './components/counterAplication/CounterAplication'
-import User from './components/user/User'
-import AppProviders from './providers/AppProviders'
+import "./App.css"
+import Application from "./components/application/Application"
+import Counter2 from "./components/counter2/Counter2"
+import CounterAplication from "./components/counterAplication/CounterAplication"
+import User from "./components/user/User"
+import AppProviders from "./providers/AppProviders"
 
 const App = () => {
   return (

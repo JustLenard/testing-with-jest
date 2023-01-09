@@ -1,4 +1,4 @@
-import { Counter2Props } from './Counter2.types'
+import { Counter2Props } from "./Counter2.types"
 
 const Counter2: React.FC<Counter2Props> = ({
   count,
