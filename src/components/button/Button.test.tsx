@@ -1,9 +1,9 @@
-import { render, screen } from "@testing-library/react"
-import Button from "./Button"
+import { render, screen } from '@testing-library/react'
+import Button from './Button'
 
-test("Button renders corectly", () => {
+test('Button renders corectly', () => {
   render(
-    <Button displayText="FooBar" executeOnClick={() => console.log("f")} />
+    <Button displayText="FooBar" executeOnClick={() => console.log('f')} />
   )
   const textElement = screen.getByText(/foobar/i)
 

@@ -1,5 +1,5 @@
-import { CssBaseline } from "@mui/material"
-import { createTheme, ThemeProvider } from "@mui/material/styles"
+import { CssBaseline } from '@mui/material'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
 
 interface Props {
   children: React.ReactNode
@@ -7,7 +7,7 @@ interface Props {
 
 export const theme = createTheme({
   palette: {
-    mode: "dark",
+    mode: 'dark',
   },
 })
 

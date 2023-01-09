@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from 'react'
 
 interface Props {}
 
@@ -13,12 +13,12 @@ const User: React.FC<Props> = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await fetch("https://jsonplaceholder.typicode.com/users")
+        const res = await fetch('https://jsonplaceholder.typicode.com/users')
 
         const obj: IUser[] = await res.json()
         setUsers(obj)
       } catch (err) {
-        setError("Erorr happened")
+        setError('Erorr happened')
       }
     }
     getData()

@@ -1,7 +1,7 @@
-import { Typography, useTheme } from "@mui/material"
-import { useState } from "react"
-import Button from "../button/Button"
-import Counter from "../counter/Counter"
+import { Typography, useTheme } from '@mui/material'
+import { useState } from 'react'
+import Button from '../button/Button'
+import Counter from '../counter/Counter'
 
 interface Props {}
 
